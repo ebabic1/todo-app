@@ -12,7 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.action-wrapper{
+  margin-left:10px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,7 +29,74 @@
 .App-link {
   color: #61dafb;
 }
+.todo-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
 
+}
+.create-button {
+  background-color: #2196F3; 
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.create-button:hover {
+  background-color: #1976D2; 
+}
+.complete-button{
+  background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+.complete-button:hover {
+  background-color: #45A049;
+}
+.delete-button {
+  background-color: #F44336; 
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+button:disabled{
+  background-color: gray;
+  cursor: auto;
+}
+.delete-button:hover {
+  background-color: #D32F2F; /* Darker red on hover */
+}
+.edit-button {
+  background-color: white;
+  color: #282c34;
+  border-radius: 4px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #F5F5F5; /* Light gray on hover */
+  color: #2196F3; /* Material Blue on hover */
+}
+button{
+  border: none;
+}
+button:hover:not(:disabled){
+  cursor: pointer;
+}
+button:hover{
+  cursor: pointer;
+}
+.completed{
+  text-decoration: line-through !important;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
