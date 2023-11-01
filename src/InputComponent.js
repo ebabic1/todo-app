@@ -1,4 +1,4 @@
-function InputComponent({isEditMode, task, handleTaskChange, handleUpdate, handleSave}) {
+const InputComponent = ({isEditMode, task, handleTaskChange, handleUpdate, handleSave}) => {
     return (
         <div>
           <input value={task} onChange={(event) => handleTaskChange(event)} />            

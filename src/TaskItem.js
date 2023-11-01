@@ -1,4 +1,4 @@
-function TaskItem({ todo, index, handleComplete, handleDelete, handleEdit }) {
+const TaskItem = ({ todo, index, handleComplete, handleDelete, handleEdit }) => {
   return (
     <div key={index} className="todo-wrapper">
     <p className={`${todo.isCompleted ? "completed" : ""}`}>{todo.name}</p>
