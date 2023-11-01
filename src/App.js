@@ -1,7 +1,9 @@
-import "./App.css";
 import { useEffect, useState } from "react";
+
 import TaskItem from "./TaskItem.js";
 import InputComponent from "./InputComponent";
+
+import "./App.css";
 const App = () => {
   const [task, setTask] = useState("");
   const [toDos, setToDos] = useState([]);
