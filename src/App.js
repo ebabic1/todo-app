@@ -1,15 +1,19 @@
 import { useEffect, useState } from "react";
 
+import "./App.css";
+
 import TaskItem from "./TaskItem.js";
 import InputComponent from "./InputComponent";
 
+import { TODO_KEY } from "./constants";
+
 import "./App.css";
+
 const App = () => {
   const [task, setTask] = useState("");
   const [toDos, setToDos] = useState([]);
   const [editIndex, setEditIndex] = useState(null);
   const [isEditMode, setIsEditMode] = useState(false);
-  const TODO_KEY = "todos";
 
   const handleTaskChange = (event) => {
     const { value } = event.target;
